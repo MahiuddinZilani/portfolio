@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "name": "Techtonic",
+      "description": "An e-commerce platform for electronics, featuring products like laptops, desktops, and smartphones.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
+      "features": [
+        "User registration and authentication",
+        "Admin dashboard with product and category management",
+        "Responsive design with a beautiful color palette",
+        "Image upload functionality via ImgBB API"
+      ],
+      "repository": "https://github.com/MahiuddinZilani/doict-A5-TechTonic-MERN-client",
+      "liveDemo": "https://a5-doict-techtonic-mern.web.app/",
+      "image": "https://i.ibb.co.com/DRMZz0T/techtonic.png"
+    },
+    {
+      "name": "Portfolio Website",
+      "description": "A personal portfolio website to showcase my skills, projects, and experience.",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Express",
+        "MongoDB",
+        "tsParticles"
+      ],
+      "features": [
+        "Hero section with tsParticles background",
+        "Responsive design",
+        "Contact form and social media links",
+        "Dynamic project sections"
+      ],
+      "repository": "https://github.com/username/portfolio",
+      "liveDemo": "https://portfolio.example.com",
+      "image": "https://i.ibb.co.com/pwzjfHD/portfolio.png"
+    }
+  ]
+}
