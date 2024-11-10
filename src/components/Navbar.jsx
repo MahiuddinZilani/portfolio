@@ -25,7 +25,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="bg-gray-100 fixed top-8 left-1/2 transform -translate-x-1/2 w-2/5 h-12 mx-auto  rounded-full">
+    <div className="bg-gray-100 fixed top-0 left-1/2 transform -translate-x-1/2 w-2/5 h-12 mx-auto  rounded-full">
       <div className="dropdown h-full flex justify-center items-center lg:hidden">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
           <svg

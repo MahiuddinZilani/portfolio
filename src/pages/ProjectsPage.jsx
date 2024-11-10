@@ -3,6 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const loadProjects = async () => {
       try {
@@ -10,19 +12,26 @@ const ProjectsPage = () => {
         const data = await response.json();
         setProjects(data.projects);
       } catch (error) {
-        console.error("Error to load projects!", error);
+        console.error("Error loading projects!", error);
+      } finally {
+        setLoading(false); // Stop loading after fetch attempt (success or error)
       }
     };
     loadProjects();
   }, []);
 
-  console.log(projects);
-
   return (
-    <div className="grid grid-cols-1 w-2/3 lg:w-full mx-auto lg:grid-cols-3 my-32 max-w-screen-xl">
-      {projects.map((project, index) => (
-        <ProjectCard key={index} project={project} />
-      ))}
+    <div className="w-full max-w-screen-xl mx-auto my-28">
+      <h1 className="text-3xl font-bold text-center mb-6">My Projects</h1>
+      {loading ? (
+        <div className="text-center text-xl font-semibold">Loading...</div>
+      ) : (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mx-auto">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
