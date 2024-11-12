@@ -67,7 +67,7 @@ const ProjectCard = ({ project }) => {
             return (
               <span
                 key={index}
-                className="flex items-center justify-between space-x-1 text-sm font-bold rounded-full px-2 py-1 bg-zinc-200"
+                className="flex items-center justify-between space-x-1 text-sm font-bold rounded-full px-2 py-1 bg-stone-200"
                 style={{ color: techInfo?.color }}
               >
                 {techInfo?.icon}

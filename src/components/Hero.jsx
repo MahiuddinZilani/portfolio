@@ -12,7 +12,7 @@ const Hero = () => {
       id="tsparticles"
       className="bg-gray-900 text-white h-screen flex items-center justify-center z-10"
     >
-      {/* <Particle /> */}
+      <Particle />
       <section className="px-10  bg-black">
         <div className="grid lg:grid-cols-3 items-center justify-items-center gap-5 ">
           <div className="order-1 lg:order-1 shadow-2xl lg:col-span-1">
@@ -40,8 +40,8 @@ const Hero = () => {
                     ],
                     autoStart: true,
                     loop: true,
-                    deleteSpeed: 100,
-                    delay: 50,
+                    deleteSpeed: 80,
+                    delay: 75,
                   }}
                 />
               </span>
@@ -51,27 +51,38 @@ const Hero = () => {
               experiences focused on simplicity and purpose.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="text-lg md:text-2xl bg-orange-600 text-gray-300 font-bold py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full">
-                <Link to={"/"}>Resume</Link>
-              </button>
-              <button className="text-lg md:text-2xl bg-orange-600 text-gray-300 py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full ">
-                <Link
-                  to={"https://github.com/MahiuddinZilani"}
-                  className="flex gap-4 items-center"
-                >
+              <Link
+                to={
+                  "https://drive.google.com/file/d/1cxlx44BZSr201Zs3jhSxPTjnn9uyns7A/view?usp=sharing"
+                }
+                target="blank"
+              >
+                <button className="text-lg md:text-2xl bg-orange-600 text-black font-bold py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full">
+                  Resume
+                </button>
+              </Link>
+
+              <Link
+                to={"https://github.com/MahiuddinZilani"}
+                className="flex gap-4 items-center"
+                target="blank"
+              >
+                <button className="text-lg md:text-3xl bg-orange-600 text-black font-bold py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full ">
                   <FaGithub />
-                  {/* <span> Github</span> */}
-                </Link>
-              </button>
-              <button className="text-lg md:text-2xl bg-orange-600 text-gray-300 py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full ">
-                <Link
-                  to={"https://www.linkedin.com/in/mahiuddin-zilani-081a7628a/"}
-                  className="flex gap-0.5 items-center"
-                >
+                </button>
+                {/* <span> Github</span> */}
+              </Link>
+
+              <Link
+                to={"https://www.linkedin.com/in/mahiuddin-zilani-081a7628a/"}
+                className="flex gap-0.5 items-center"
+                target="blank"
+              >
+                <button className="text-lg md:text-3xl bg-orange-600 text-black font-bold py-2 m-2 px-8 mt-10 hover:bg-zinc-800 hover:text-white rounded-full ">
                   {/* <span> Linked</span> */}
                   <FaLinkedinIn className="" />
-                </Link>
-              </button>
+                </button>
+              </Link>
             </div>
 
             {/* <SocialMedia /> */}

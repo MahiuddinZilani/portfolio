@@ -5,6 +5,10 @@ import AboutPage from "../pages/AboutPage";
 import ErrorPage from "../pages/Error/ErrorPage";
 import ProjectsPage from "../pages/ProjectsPage";
 import SkillsPage from "../pages/SkillsPage";
+import Resume from "../layout/Resume";
+import EducationPage from "../pages/EducationPage";
+import ExperiencePage from "../pages/ExperiencePage";
+import ContactPage from "../pages/ContactPage";
 
 const Router = createBrowserRouter([
   {
@@ -23,6 +27,22 @@ const Router = createBrowserRouter([
       {
         path: "/projects",
         element: <ProjectsPage />,
+      },
+      {
+        path: "/education",
+        element: <EducationPage />,
+      },
+      {
+        path: "/experience",
+        element: <ExperiencePage />,
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
       },
     ],
   },

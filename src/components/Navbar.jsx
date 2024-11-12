@@ -1,31 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+// import "../App.css";
+import "../index.css";
 
 const Navbar = () => {
   const menu = (
     <>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/"}>About</NavLink>
       </li>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/skills"}>Skills </NavLink>
       </li>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/projects"}>Projects </NavLink>
       </li>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/education"}>Education </NavLink>
       </li>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/experience"}>Experience </NavLink>
       </li>
-      <li>
+      <li className="mr-4">
         <NavLink to={"/contact"}>Contact </NavLink>
+        {/* <a href="#contact">Contact</a> */}
       </li>
     </>
   );
   return (
-    <div className="bg-gray-100 fixed top-0 left-1/2 transform -translate-x-1/2 w-2/5 h-12 mx-auto  rounded-full">
+    <div className="bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800 fixed top-0 left-1/2 transform -translate-x-1/2 w-full h-12 mx-auto text-white font-semibold rounded-sm z-50 overflow-hidden">
       <div className="dropdown h-full flex justify-center items-center lg:hidden">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
           <svg

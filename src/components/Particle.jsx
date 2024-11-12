@@ -20,7 +20,6 @@ const Particle = () => {
   return (
     <Particles
       id="tsparticles"
-      className="z-10"
       //   url="http://foo.bar/particles.json"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -48,7 +47,7 @@ const Particle = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 120,
               duration: 0.5,
             },
           },
@@ -79,7 +78,7 @@ const Particle = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 20,
           },
           opacity: {
             value: 0.5,

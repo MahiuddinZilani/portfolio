@@ -1,3 +1,32 @@
+@keyframes multiColorGlow {
+  0% {
+    filter: drop-shadow(0 0 40px rgba(255, 0, 0, 0.9)) /* Intense red */
+      drop-shadow(0 0 80px rgba(0, 255, 0, 0.9)) /* Intense green */
+      drop-shadow(0 0 120px rgba(0, 0, 255, 0.9)); /* Intense blue */
+  }
+  50% {
+    filter: drop-shadow(0 0 60px rgba(255, 0, 0, 1)) /* Bright red */
+      drop-shadow(0 0 100px rgba(0, 255, 0, 1)) /* Bright green */
+      drop-shadow(0 0 140px rgba(0, 0, 255, 1)); /* Bright blue */
+  }
+  100% {
+    filter: drop-shadow(0 0 80px rgba(255, 0, 0, 1)) /* Stronger red */
+      drop-shadow(0 0 120px rgba(0, 255, 0, 1)) /* Stronger green */
+      drop-shadow(0 0 160px rgba(0, 0, 255, 1)); /* Stronger blue */
+  }
+}
+
+/* @keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(255, 0, 0, 0.5))
+      drop-shadow(0 0 8px rgba(255, 0, 0, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.8))
+      drop-shadow(0 0 24px rgba(255, 0, 0, 0.5));
+  }
+} */
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
